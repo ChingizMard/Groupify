@@ -28,7 +28,11 @@ class LogininViewController: UIViewController{
         if username.text == "" || password.text == "" {
             errorMessage.text = "Enter both username and password!"
         }else{
-            login.authenticate(username: username.text!, password: password.text!);
+            if (login.authenticate(username: username.text!, password: password.text!)) {
+                print("Login Successful!")
+            }else{
+                print("Login Failed!")
+            }
         }
     }
     

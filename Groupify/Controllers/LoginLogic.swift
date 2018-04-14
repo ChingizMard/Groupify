@@ -12,10 +12,21 @@ import SwiftKeychainWrapper
 class Login{
     
     func isauthenticated() -> Bool{
-        return false
+        var username = self.retrieveFromKeychain(key: "groupify_username")
+        var password = self.retrieveFromKeychain(key: "groupify_password")
+        if ()
     }
 
     func authenticate(username:String, password:String) -> Bool {
+        var requestDictionary = Dictionary<String, Any>()
+        requestDictionary["username"] = username
+        requestDictionary["password"] = password
+        if let returnedDictionary = APIService.post("", parameters: requestDictionary) {
+            /* Implement handling code for the returned Bool */
+            self.saveToKeychain(value: returnedDictionary["username"] as! String, key: "groupify_username")
+            self.saveToKeychain(value: returnedDictionary["password"] as! String, key: "groupify_password")
+            return true
+        }
         return false
     }
     
