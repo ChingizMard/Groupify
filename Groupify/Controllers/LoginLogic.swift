@@ -14,7 +14,11 @@ class Login{
     func isauthenticated() -> Bool{
         var username = self.retrieveFromKeychain(key: "groupify_username")
         var password = self.retrieveFromKeychain(key: "groupify_password")
-        if ()
+        if (username != "" && password != ""){
+            return true
+        }else{
+            return false
+        }
     }
 
     func authenticate(username:String, password:String) -> Bool {
