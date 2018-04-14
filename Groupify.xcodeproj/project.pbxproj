@@ -24,6 +24,10 @@
 		B5C2BFA32082557F00227447 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA22082557F00227447 /* Profile.storyboard */; };
 		B5C2BFA52082558E00227447 /* Explorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA42082558E00227447 /* Explorer.storyboard */; };
 		B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFA920825F8000227447 /* ProfileViewController.swift */; };
+		B5C2BFAC2082677E00227447 /* ProfileLogicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFAB2082677E00227447 /* ProfileLogicViewController.swift */; };
+		B5C2BFAE208270C500227447 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFAD208270C500227447 /* User.swift */; };
+		B5C2BFB22082774500227447 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFB12082774500227447 /* Services.swift */; };
+		B5C2BFB420827DC600227447 /* Extenssions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFB320827DC600227447 /* Extenssions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		B5C2BFA22082557F00227447 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B5C2BFA42082558E00227447 /* Explorer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explorer.storyboard; sourceTree = "<group>"; };
 		B5C2BFA920825F8000227447 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B5C2BFAB2082677E00227447 /* ProfileLogicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogicViewController.swift; sourceTree = "<group>"; };
+		B5C2BFAD208270C500227447 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5C2BFB12082774500227447 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		B5C2BFB320827DC600227447 /* Extenssions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenssions.swift; sourceTree = "<group>"; };
 		C71A4566918306A2F800C956 /* Pods-GroupifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCEC8063E7AB797C05570F26 /* Pods_GroupifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EC698D960B4CCD2AD57E3D /* Pods-GroupifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +142,8 @@
 		B57F26DA20824EF3002CF213 /* Groupify */ = {
 			isa = PBXGroup;
 			children = (
+				B5C2BFB0208272C100227447 /* Services */,
+				B5C2BFAF2082711600227447 /* Models */,
 				B5C2BFA620825C4E00227447 /* Controllers */,
 				B57F270D20825462002CF213 /* Views */,
 				B57F26DB20824EF3002CF213 /* AppDelegate.swift */,
@@ -182,8 +192,26 @@
 				B5C2BFA920825F8000227447 /* ProfileViewController.swift */,
 				9808A2EC2082736B005D9C24 /* LoginViewController.swift */,
 				98543A0920827C2500BB0CAF /* LoginLogic.swift */,
+				B5C2BFAB2082677E00227447 /* ProfileLogicViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B5C2BFAF2082711600227447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2BFAD208270C500227447 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5C2BFB0208272C100227447 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2BFB12082774500227447 /* Services.swift */,
+				B5C2BFB320827DC600227447 /* Extenssions.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CEFD7C7FF48C74AB6D713FC9 /* Pods */ = {
@@ -342,11 +370,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,11 +430,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57F26E020824EF3002CF213 /* ExploreViewController.swift in Sources */,
+				B5C2BFAC2082677E00227447 /* ProfileLogicViewController.swift in Sources */,
+				B5C2BFAE208270C500227447 /* User.swift in Sources */,
+				B5C2BFB22082774500227447 /* Services.swift in Sources */,
 				B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */,
 				98543A0A20827C2500BB0CAF /* LoginLogic.swift in Sources */,
 				B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */,
 				9808A2ED2082736B005D9C24 /* LoginViewController.swift in Sources */,
 				B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */,
+				B5C2BFB420827DC600227447 /* Extenssions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

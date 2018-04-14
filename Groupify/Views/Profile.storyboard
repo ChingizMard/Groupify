@@ -10,29 +10,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile Logic View Controller-->
         <scene sceneID="4E6-kd-Jmq">
             <objects>
-                <viewController id="OR9-iY-qHa" sceneMemberID="viewController">
+                <viewController id="OR9-iY-qHa" customClass="ProfileLogicViewController" customModule="Groupify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2xq-dF-gXV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7M-6f-EyE">
-                                <rect key="frame" x="166" y="269" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HZA-ll-iRU">
+                                <rect key="frame" x="0.0" y="238" width="375" height="429"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="429" id="LjR-bH-U1t"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="OR9-iY-qHa" id="G54-9v-4iS"/>
+                                    <outlet property="delegate" destination="OR9-iY-qHa" id="8SU-Ja-hKI"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="daE-o5-KcJ">
+                                <rect key="frame" x="112" y="56" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VrT-J9-hUd"/>
+                                    <constraint firstAttribute="width" constant="150" id="VvI-Ui-WGz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HZA-ll-iRU" firstAttribute="top" secondItem="daE-o5-KcJ" secondAttribute="bottom" constant="32" id="0ip-63-Lbq"/>
+                            <constraint firstItem="daE-o5-KcJ" firstAttribute="centerX" secondItem="yfu-oo-ED9" secondAttribute="centerX" id="2yv-F6-JpK"/>
+                            <constraint firstItem="HZA-ll-iRU" firstAttribute="trailing" secondItem="yfu-oo-ED9" secondAttribute="trailing" id="BCC-eM-jZN"/>
+                            <constraint firstItem="HZA-ll-iRU" firstAttribute="leading" secondItem="yfu-oo-ED9" secondAttribute="leading" id="MRJ-um-Clk"/>
+                            <constraint firstItem="HZA-ll-iRU" firstAttribute="bottom" secondItem="yfu-oo-ED9" secondAttribute="bottom" id="O9V-pA-xAH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yfu-oo-ED9"/>
                     </view>
+                    <connections>
+                        <outlet property="profileImage" destination="daE-o5-KcJ" id="rdt-3c-uNu"/>
+                        <outlet property="tableView" destination="HZA-ll-iRU" id="axw-dC-FkW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erb-vO-yvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="117"/>
+            <point key="canvasLocation" x="173.59999999999999" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>

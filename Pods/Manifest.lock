@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (4.4.0)
+  - Eureka (4.0.1)
+  - ObjectMapper (3.1.0)
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - Alamofire (= 4.4.0)
+  - Eureka
+  - ObjectMapper
   - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Eureka
+    - ObjectMapper
     - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 8800fdae874a8f510b99a1a081b34daec92312a7
+PODFILE CHECKSUM: fbf74109cd843ba541f0d0a6d24414ff20a29a82
 
 COCOAPODS: 1.5.0
