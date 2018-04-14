@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
+  - Eureka (4.0.1)
+  - ObjectMapper (3.1.0)
 
 DEPENDENCIES:
   - Alamofire (= 4.4.0)
+  - Eureka
+  - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
 
-PODFILE CHECKSUM: fecc0f7b3e500144754eb63d7ac7017c06622b06
+PODFILE CHECKSUM: 402a28da72361d088fd5977ed1d3d1fdc71d8051
 
 COCOAPODS: 1.3.1
