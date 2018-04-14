@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7A2F0AB0E4635C051A0BC3 /* Pods_Groupify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E91770472BCD9687737142E /* Pods_Groupify.framework */; };
+		6A389F13F82DA8D248C33902 /* Pods_GroupifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEC8063E7AB797C05570F26 /* Pods_GroupifyTests.framework */; };
 		B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DB20824EF3002CF213 /* AppDelegate.swift */; };
-		B57F26DE20824EF3002CF213 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DD20824EF3002CF213 /* FirstViewController.swift */; };
-		B57F26E020824EF3002CF213 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DF20824EF3002CF213 /* SecondViewController.swift */; };
+		B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */; };
+		B57F26E020824EF3002CF213 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DF20824EF3002CF213 /* ExploreViewController.swift */; };
 		B57F26E320824EF3002CF213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57F26E120824EF3002CF213 /* Main.storyboard */; };
 		B57F26E520824EF3002CF213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57F26E420824EF3002CF213 /* Assets.xcassets */; };
 		B57F26E820824EF3002CF213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57F26E620824EF3002CF213 /* LaunchScreen.storyboard */; };
 		B57F26F320824EF3002CF213 /* GroupifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26F220824EF3002CF213 /* GroupifyTests.swift */; };
 		B57F26FE20824EF3002CF213 /* GroupifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26FD20824EF3002CF213 /* GroupifyUITests.swift */; };
+		B57F270C20825452002CF213 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57F270B20825452002CF213 /* Events.storyboard */; };
+		B5C2BFA32082557F00227447 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA22082557F00227447 /* Profile.storyboard */; };
+		B5C2BFA52082558E00227447 /* Explorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA42082558E00227447 /* Explorer.storyboard */; };
+		B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFA920825F8000227447 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30F7DB44B822575514809F96 /* Pods-Groupify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groupify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Groupify/Pods-Groupify.debug.xcconfig"; sourceTree = "<group>"; };
+		6E91770472BCD9687737142E /* Pods_Groupify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Groupify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F26D820824EF3002CF213 /* Groupify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groupify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F26DB20824EF3002CF213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B57F26DD20824EF3002CF213 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B57F26DF20824EF3002CF213 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvnetsViewController.swift; sourceTree = "<group>"; };
+		B57F26DF20824EF3002CF213 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		B57F26E220824EF3002CF213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B57F26E420824EF3002CF213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57F26E720824EF3002CF213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		B57F26F920824EF3002CF213 /* GroupifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F26FD20824EF3002CF213 /* GroupifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupifyUITests.swift; sourceTree = "<group>"; };
 		B57F26FF20824EF3002CF213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57F270B20825452002CF213 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		B5C2BFA22082557F00227447 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B5C2BFA42082558E00227447 /* Explorer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explorer.storyboard; sourceTree = "<group>"; };
+		B5C2BFA920825F8000227447 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C71A4566918306A2F800C956 /* Pods-GroupifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCEC8063E7AB797C05570F26 /* Pods_GroupifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EC698D960B4CCD2AD57E3D /* Pods-GroupifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4F3DB221A50C5DA003A5324 /* Pods-Groupify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groupify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Groupify/Pods-Groupify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7A2F0AB0E4635C051A0BC3 /* Pods_Groupify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A389F13F82DA8D248C33902 /* Pods_GroupifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3E2DE715AFCBB94D26A8EA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E91770472BCD9687737142E /* Pods_Groupify.framework */,
+				CCEC8063E7AB797C05570F26 /* Pods_GroupifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B57F26CF20824EF3002CF213 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +110,8 @@
 				B57F26F120824EF3002CF213 /* GroupifyTests */,
 				B57F26FC20824EF3002CF213 /* GroupifyUITests */,
 				B57F26D920824EF3002CF213 /* Products */,
+				CEFD7C7FF48C74AB6D713FC9 /* Pods */,
+				B3E2DE715AFCBB94D26A8EA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +128,9 @@
 		B57F26DA20824EF3002CF213 /* Groupify */ = {
 			isa = PBXGroup;
 			children = (
+				B5C2BFA620825C4E00227447 /* Controllers */,
+				B57F270D20825462002CF213 /* Views */,
 				B57F26DB20824EF3002CF213 /* AppDelegate.swift */,
-				B57F26DD20824EF3002CF213 /* FirstViewController.swift */,
-				B57F26DF20824EF3002CF213 /* SecondViewController.swift */,
-				B57F26E120824EF3002CF213 /* Main.storyboard */,
 				B57F26E420824EF3002CF213 /* Assets.xcassets */,
 				B57F26E620824EF3002CF213 /* LaunchScreen.storyboard */,
 				B57F26E920824EF3002CF213 /* Info.plist */,
@@ -128,6 +156,38 @@
 			path = GroupifyUITests;
 			sourceTree = "<group>";
 		};
+		B57F270D20825462002CF213 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B57F26E120824EF3002CF213 /* Main.storyboard */,
+				B57F270B20825452002CF213 /* Events.storyboard */,
+				B5C2BFA22082557F00227447 /* Profile.storyboard */,
+				B5C2BFA42082558E00227447 /* Explorer.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5C2BFA620825C4E00227447 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */,
+				B57F26DF20824EF3002CF213 /* ExploreViewController.swift */,
+				B5C2BFA920825F8000227447 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEFD7C7FF48C74AB6D713FC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30F7DB44B822575514809F96 /* Pods-Groupify.debug.xcconfig */,
+				F4F3DB221A50C5DA003A5324 /* Pods-Groupify.release.xcconfig */,
+				C71A4566918306A2F800C956 /* Pods-GroupifyTests.debug.xcconfig */,
+				E3EC698D960B4CCD2AD57E3D /* Pods-GroupifyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B57F270220824EF3002CF213 /* Build configuration list for PBXNativeTarget "Groupify" */;
 			buildPhases = (
+				C5F5DB3BAE11C0A53B46FF17 /* [CP] Check Pods Manifest.lock */,
 				B57F26D420824EF3002CF213 /* Sources */,
 				B57F26D520824EF3002CF213 /* Frameworks */,
 				B57F26D620824EF3002CF213 /* Resources */,
+				334B843E2B2AC2278E954735 /* [CP] Embed Pods Frameworks */,
+				81846E27422FC033D5703EFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B57F270520824EF3002CF213 /* Build configuration list for PBXNativeTarget "GroupifyTests" */;
 			buildPhases = (
+				8C41E4172B2B155AA699EFF2 /* [CP] Check Pods Manifest.lock */,
 				B57F26EA20824EF3002CF213 /* Sources */,
 				B57F26EB20824EF3002CF213 /* Frameworks */,
 				B57F26EC20824EF3002CF213 /* Resources */,
+				73C8B5D7A4C8846D6650AA41 /* [CP] Embed Pods Frameworks */,
+				966A5B373DAE5987B2A9CD21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57F26E820824EF3002CF213 /* LaunchScreen.storyboard in Resources */,
+				B5C2BFA52082558E00227447 /* Explorer.storyboard in Resources */,
+				B57F270C20825452002CF213 /* Events.storyboard in Resources */,
+				B5C2BFA32082557F00227447 /* Profile.storyboard in Resources */,
 				B57F26E520824EF3002CF213 /* Assets.xcassets in Resources */,
 				B57F26E320824EF3002CF213 /* Main.storyboard in Resources */,
 			);
@@ -257,14 +326,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		334B843E2B2AC2278E954735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C8B5D7A4C8846D6650AA41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81846E27422FC033D5703EFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C41E4172B2B155AA699EFF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		966A5B373DAE5987B2A9CD21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F5DB3BAE11C0A53B46FF17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Groupify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B57F26D420824EF3002CF213 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57F26E020824EF3002CF213 /* SecondViewController.swift in Sources */,
+				B57F26E020824EF3002CF213 /* ExploreViewController.swift in Sources */,
 				B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */,
-				B57F26DE20824EF3002CF213 /* FirstViewController.swift in Sources */,
+				B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */,
+				B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +600,7 @@
 		};
 		B57F270320824EF3002CF213 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F7DB44B822575514809F96 /* Pods-Groupify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +615,7 @@
 		};
 		B57F270420824EF3002CF213 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F3DB221A50C5DA003A5324 /* Pods-Groupify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +630,7 @@
 		};
 		B57F270620824EF3002CF213 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71A4566918306A2F800C956 /* Pods-GroupifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -472,6 +647,7 @@
 		};
 		B57F270720824EF3002CF213 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EC698D960B4CCD2AD57E3D /* Pods-GroupifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

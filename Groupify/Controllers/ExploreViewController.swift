@@ -8,11 +8,18 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ExploreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //Do not remove this code. This is a subview.
+        var storyboard = UIStoryboard(name: "Explorer", bundle: nil)
+        var controller = storyboard.instantiateInitialViewController() as! UIViewController
+        addChildViewController(controller)
+        view.addSubview(controller.view)
+        controller.didMove(toParentViewController: self)
+        //////////////////////////////////////////////
     }
 
     override func didReceiveMemoryWarning() {
