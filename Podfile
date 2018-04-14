@@ -7,6 +7,8 @@ target 'Groupify' do
 
   # Pods for Groupify
   pod 'Alamofire', '4.4.0'
+  
+  pod 'SwiftKeychainWrapper'
 
   target 'GroupifyTests' do
     inherit! :search_paths

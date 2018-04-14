@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1B7A2F0AB0E4635C051A0BC3 /* Pods_Groupify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E91770472BCD9687737142E /* Pods_Groupify.framework */; };
 		6A389F13F82DA8D248C33902 /* Pods_GroupifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEC8063E7AB797C05570F26 /* Pods_GroupifyTests.framework */; };
+		9808A2EB2082681A005D9C24 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9808A2EA2082681A005D9C24 /* Login.storyboard */; };
+		9808A2ED2082736B005D9C24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9808A2EC2082736B005D9C24 /* LoginViewController.swift */; };
+		98543A0A20827C2500BB0CAF /* LoginLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98543A0920827C2500BB0CAF /* LoginLogic.swift */; };
 		B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DB20824EF3002CF213 /* AppDelegate.swift */; };
 		B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */; };
 		B57F26E020824EF3002CF213 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26DF20824EF3002CF213 /* ExploreViewController.swift */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		30F7DB44B822575514809F96 /* Pods-Groupify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groupify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Groupify/Pods-Groupify.debug.xcconfig"; sourceTree = "<group>"; };
 		6E91770472BCD9687737142E /* Pods_Groupify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Groupify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9808A2EA2082681A005D9C24 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9808A2EC2082736B005D9C24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98543A0920827C2500BB0CAF /* LoginLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogic.swift; sourceTree = "<group>"; };
 		B57F26D820824EF3002CF213 /* Groupify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groupify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F26DB20824EF3002CF213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvnetsViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 				B57F270B20825452002CF213 /* Events.storyboard */,
 				B5C2BFA22082557F00227447 /* Profile.storyboard */,
 				B5C2BFA42082558E00227447 /* Explorer.storyboard */,
+				9808A2EA2082681A005D9C24 /* Login.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +180,8 @@
 				B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */,
 				B57F26DF20824EF3002CF213 /* ExploreViewController.swift */,
 				B5C2BFA920825F8000227447 /* ProfileViewController.swift */,
+				9808A2EC2082736B005D9C24 /* LoginViewController.swift */,
+				98543A0920827C2500BB0CAF /* LoginLogic.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,7 +209,6 @@
 				B57F26D520824EF3002CF213 /* Frameworks */,
 				B57F26D620824EF3002CF213 /* Resources */,
 				334B843E2B2AC2278E954735 /* [CP] Embed Pods Frameworks */,
-				81846E27422FC033D5703EFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,8 +227,6 @@
 				B57F26EA20824EF3002CF213 /* Sources */,
 				B57F26EB20824EF3002CF213 /* Frameworks */,
 				B57F26EC20824EF3002CF213 /* Resources */,
-				73C8B5D7A4C8846D6650AA41 /* [CP] Embed Pods Frameworks */,
-				966A5B373DAE5987B2A9CD21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +309,7 @@
 			files = (
 				B57F26E820824EF3002CF213 /* LaunchScreen.storyboard in Resources */,
 				B5C2BFA52082558E00227447 /* Explorer.storyboard in Resources */,
+				9808A2EB2082681A005D9C24 /* Login.storyboard in Resources */,
 				B57F270C20825452002CF213 /* Events.storyboard in Resources */,
 				B5C2BFA32082557F00227447 /* Profile.storyboard in Resources */,
 				B57F26E520824EF3002CF213 /* Assets.xcassets in Resources */,
@@ -335,44 +342,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73C8B5D7A4C8846D6650AA41 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81846E27422FC033D5703EFF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8C41E4172B2B155AA699EFF2 /* [CP] Check Pods Manifest.lock */ = {
@@ -391,21 +370,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		966A5B373DAE5987B2A9CD21 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5F5DB3BAE11C0A53B46FF17 /* [CP] Check Pods Manifest.lock */ = {
@@ -435,7 +399,9 @@
 			files = (
 				B57F26E020824EF3002CF213 /* ExploreViewController.swift in Sources */,
 				B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */,
+				98543A0A20827C2500BB0CAF /* LoginLogic.swift in Sources */,
 				B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */,
+				9808A2ED2082736B005D9C24 /* LoginViewController.swift in Sources */,
 				B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
