@@ -21,6 +21,11 @@
 		B57F26F320824EF3002CF213 /* GroupifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26F220824EF3002CF213 /* GroupifyTests.swift */; };
 		B57F26FE20824EF3002CF213 /* GroupifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F26FD20824EF3002CF213 /* GroupifyUITests.swift */; };
 		B57F270C20825452002CF213 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57F270B20825452002CF213 /* Events.storyboard */; };
+		B5817EFA2082D90B00F2D1D0 /* ExplorerLogicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817EF92082D90B00F2D1D0 /* ExplorerLogicViewController.swift */; };
+		B5817EFC2082D94E00F2D1D0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817EFB2082D94E00F2D1D0 /* Event.swift */; };
+		B5817EFF2082DC7900F2D1D0 /* EventCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817EFE2082DC7900F2D1D0 /* EventCellViewController.swift */; };
+		B5817F012083007300F2D1D0 /* DetailEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817F002083007300F2D1D0 /* DetailEventViewController.swift */; };
+		B5817F0520830EB700F2D1D0 /* EventsLogicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817F0420830EB700F2D1D0 /* EventsLogicViewController.swift */; };
 		B5C2BFA32082557F00227447 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA22082557F00227447 /* Profile.storyboard */; };
 		B5C2BFA52082558E00227447 /* Explorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA42082558E00227447 /* Explorer.storyboard */; };
 		B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFA920825F8000227447 /* ProfileViewController.swift */; };
@@ -68,6 +73,11 @@
 		B57F26FD20824EF3002CF213 /* GroupifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupifyUITests.swift; sourceTree = "<group>"; };
 		B57F26FF20824EF3002CF213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B57F270B20825452002CF213 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		B5817EF92082D90B00F2D1D0 /* ExplorerLogicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerLogicViewController.swift; sourceTree = "<group>"; };
+		B5817EFB2082D94E00F2D1D0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B5817EFE2082DC7900F2D1D0 /* EventCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewController.swift; sourceTree = "<group>"; };
+		B5817F002083007300F2D1D0 /* DetailEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventViewController.swift; sourceTree = "<group>"; };
+		B5817F0420830EB700F2D1D0 /* EventsLogicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLogicViewController.swift; sourceTree = "<group>"; };
 		B5C2BFA22082557F00227447 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B5C2BFA42082558E00227447 /* Explorer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explorer.storyboard; sourceTree = "<group>"; };
 		B5C2BFA920825F8000227447 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -184,15 +194,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B5817EFD2082DC5200F2D1D0 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5817EFE2082DC7900F2D1D0 /* EventCellViewController.swift */,
+			);
+			path = CellControllers;
+			sourceTree = "<group>";
+		};
 		B5C2BFA620825C4E00227447 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B5817EFD2082DC5200F2D1D0 /* CellControllers */,
 				B57F26DD20824EF3002CF213 /* EvnetsViewController.swift */,
 				B57F26DF20824EF3002CF213 /* ExploreViewController.swift */,
 				B5C2BFA920825F8000227447 /* ProfileViewController.swift */,
 				9808A2EC2082736B005D9C24 /* LoginViewController.swift */,
 				98543A0920827C2500BB0CAF /* LoginLogic.swift */,
 				B5C2BFAB2082677E00227447 /* ProfileLogicViewController.swift */,
+				B5817EF92082D90B00F2D1D0 /* ExplorerLogicViewController.swift */,
+				B5817F002083007300F2D1D0 /* DetailEventViewController.swift */,
+				B5817F0420830EB700F2D1D0 /* EventsLogicViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				B5C2BFAD208270C500227447 /* User.swift */,
+				B5817EFB2082D94E00F2D1D0 /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +260,7 @@
 				B57F26D520824EF3002CF213 /* Frameworks */,
 				B57F26D620824EF3002CF213 /* Resources */,
 				334B843E2B2AC2278E954735 /* [CP] Embed Pods Frameworks */,
+				462F79A1705AC4F647284C34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +279,8 @@
 				B57F26EA20824EF3002CF213 /* Sources */,
 				B57F26EB20824EF3002CF213 /* Frameworks */,
 				B57F26EC20824EF3002CF213 /* Resources */,
+				A139B2FF0B5A6BFDE04D4D66 /* [CP] Embed Pods Frameworks */,
+				1D817D9C4B2935D32A443C57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,6 +388,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D817D9C4B2935D32A443C57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		334B843E2B2AC2278E954735 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,6 +427,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		462F79A1705AC4F647284C34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Groupify/Pods-Groupify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8C41E4172B2B155AA699EFF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,6 +458,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A139B2FF0B5A6BFDE04D4D66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupifyTests/Pods-GroupifyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5F5DB3BAE11C0A53B46FF17 /* [CP] Check Pods Manifest.lock */ = {
@@ -433,11 +504,16 @@
 				B5C2BFAC2082677E00227447 /* ProfileLogicViewController.swift in Sources */,
 				B5C2BFAE208270C500227447 /* User.swift in Sources */,
 				B5C2BFB22082774500227447 /* Services.swift in Sources */,
+				B5817F0520830EB700F2D1D0 /* EventsLogicViewController.swift in Sources */,
+				B5817EFC2082D94E00F2D1D0 /* Event.swift in Sources */,
 				B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */,
 				98543A0A20827C2500BB0CAF /* LoginLogic.swift in Sources */,
 				B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */,
 				9808A2ED2082736B005D9C24 /* LoginViewController.swift in Sources */,
 				B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */,
+				B5817F012083007300F2D1D0 /* DetailEventViewController.swift in Sources */,
+				B5817EFF2082DC7900F2D1D0 /* EventCellViewController.swift in Sources */,
+				B5817EFA2082D90B00F2D1D0 /* ExplorerLogicViewController.swift in Sources */,
 				B5C2BFB420827DC600227447 /* Extenssions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class ExploreViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //Do not remove this code. This is a subview.
         var storyboard = UIStoryboard(name: "Explorer", bundle: nil)
-        var controller = storyboard.instantiateInitialViewController() as! UIViewController
+        var controller = storyboard.instantiateInitialViewController() as! UINavigationController
         addChildViewController(controller)
         view.addSubview(controller.view)
         controller.didMove(toParentViewController: self)

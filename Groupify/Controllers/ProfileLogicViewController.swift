@@ -43,6 +43,11 @@ class ProfileLogicViewController: FormViewController {
                 row.title = "Description"
                 row.placeholder = "I like Pina Coladas, and getting caught in the rain \n I´m not much into health food, I am into champagne \n I´ve got to meet you by tomorrow noon, and cut through all this red tape \nAt a bar called O'Malley's, where we´ll plan our escape"
             }
+        +++ Section("Log Out")
+            <<< ButtonRow(){row in
+                row.title = "Log Out"
+                row.cell.detailTextLabel?.textColor = UIColor.red
+        }
         }
     
     
