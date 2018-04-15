@@ -26,6 +26,8 @@
 		B5817EFF2082DC7900F2D1D0 /* EventCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817EFE2082DC7900F2D1D0 /* EventCellViewController.swift */; };
 		B5817F012083007300F2D1D0 /* DetailEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817F002083007300F2D1D0 /* DetailEventViewController.swift */; };
 		B5817F0520830EB700F2D1D0 /* EventsLogicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817F0420830EB700F2D1D0 /* EventsLogicViewController.swift */; };
+		B5817F072083194E00F2D1D0 /* EventLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817F062083194E00F2D1D0 /* EventLogic.swift */; };
+		B5817F0920831A2600F2D1D0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5817F0820831A2600F2D1D0 /* Location.swift */; };
 		B5C2BFA32082557F00227447 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA22082557F00227447 /* Profile.storyboard */; };
 		B5C2BFA52082558E00227447 /* Explorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C2BFA42082558E00227447 /* Explorer.storyboard */; };
 		B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2BFA920825F8000227447 /* ProfileViewController.swift */; };
@@ -78,6 +80,8 @@
 		B5817EFE2082DC7900F2D1D0 /* EventCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewController.swift; sourceTree = "<group>"; };
 		B5817F002083007300F2D1D0 /* DetailEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventViewController.swift; sourceTree = "<group>"; };
 		B5817F0420830EB700F2D1D0 /* EventsLogicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLogicViewController.swift; sourceTree = "<group>"; };
+		B5817F062083194E00F2D1D0 /* EventLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogic.swift; sourceTree = "<group>"; };
+		B5817F0820831A2600F2D1D0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B5C2BFA22082557F00227447 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B5C2BFA42082558E00227447 /* Explorer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explorer.storyboard; sourceTree = "<group>"; };
 		B5C2BFA920825F8000227447 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 				B5817EF92082D90B00F2D1D0 /* ExplorerLogicViewController.swift */,
 				B5817F002083007300F2D1D0 /* DetailEventViewController.swift */,
 				B5817F0420830EB700F2D1D0 /* EventsLogicViewController.swift */,
+				B5817F062083194E00F2D1D0 /* EventLogic.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			children = (
 				B5C2BFAD208270C500227447 /* User.swift */,
 				B5817EFB2082D94E00F2D1D0 /* Event.swift */,
+				B5817F0820831A2600F2D1D0 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -505,12 +511,14 @@
 				B5C2BFAE208270C500227447 /* User.swift in Sources */,
 				B5C2BFB22082774500227447 /* Services.swift in Sources */,
 				B5817F0520830EB700F2D1D0 /* EventsLogicViewController.swift in Sources */,
+				B5817F0920831A2600F2D1D0 /* Location.swift in Sources */,
 				B5817EFC2082D94E00F2D1D0 /* Event.swift in Sources */,
 				B57F26DC20824EF3002CF213 /* AppDelegate.swift in Sources */,
 				98543A0A20827C2500BB0CAF /* LoginLogic.swift in Sources */,
 				B5C2BFAA20825F8000227447 /* ProfileViewController.swift in Sources */,
 				9808A2ED2082736B005D9C24 /* LoginViewController.swift in Sources */,
 				B57F26DE20824EF3002CF213 /* EvnetsViewController.swift in Sources */,
+				B5817F072083194E00F2D1D0 /* EventLogic.swift in Sources */,
 				B5817F012083007300F2D1D0 /* DetailEventViewController.swift in Sources */,
 				B5817EFF2082DC7900F2D1D0 /* EventCellViewController.swift in Sources */,
 				B5817EFA2082D90B00F2D1D0 /* ExplorerLogicViewController.swift in Sources */,

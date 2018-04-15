@@ -57,6 +57,14 @@ class APIService{
         }
     }
     
+    
+    static func postUniversal(_ url: String, parameters: [String: Any]? = nil) -> DataRequest {
+        let headers = self.getRequestHeaders()
+        // return Alamofire.request(.POST, url, parameters: parameters, encoding: .JSON, headers: headers).validate()
+        return Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate()
+    }
+    
+    
     /* Might have to change the return value */
     static func delete(_ url: String, parameters: [String: Any]? = nil) -> DataRequest {
         let headers = self.getRequestHeaders()
