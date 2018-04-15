@@ -28,11 +28,16 @@ class LogininViewController: UIViewController{
         if username.text == "" || password.text == "" {
             errorMessage.text = "Enter both username and password!"
         }else{
-            if (login.authenticate(username: username.text!, password: password.text!)) {
-                print("Login Successful!")
-            }else{
-                print("Login Failed!")
-            }
+            login.authenticate(completion: {(success) -> Void in
+                if (success){
+                    print("Login Successful!")
+                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.userAlreadyLoggedIn()
+                }else{
+                    print("Login Failed!")
+                }
+                
+            } , username: username.text!, password: password.text!)
         }
     }
     
