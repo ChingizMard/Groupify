@@ -7,25 +7,22 @@
 //
 
 import Foundation
-//import ObjectMapper
+import ObjectMapper
 
-class Event{
-    var id: Int = 0
+class Event : Mappable{
+    var id: String?
     var title :String?
     var description :String?
     var participantsCapacity :Int?
+    var location: Location = Location()
     
-    init(title: String, description: String, participants_capacity: Int) {
-        self.title = title
-        self.description = description
-        self.participantsCapacity = participants_capacity
-    }
+
     /**
 //     The constructor required by ObjectMapper
 //     */
-//    required convenience init?(map: Map) {
-//        self.init()
-//    }
+    required convenience init?(map: Map) {
+        self.init()
+    }
 //
 //    /**
 //     The mapping function for ObjectMapper.  This function relates model
@@ -33,14 +30,13 @@ class Event{
 //
 //     - parameter map: The map of the JSON response
 //     */
-//    func mapping(map: Map) {
-//        if id == 0 {
-//            id <- map["id"]
-//        }
-//
-//        title <- map["title"]
-//        description <- map["description"]
-//        participantsCapacity <- map["capacity"]
-//    }
-//
+    func mapping(map: Map) {
+        id <- map["_id"]
+        location.center <- map["loc"]
+
+        title <- map["name"]
+        //description <- map["description"]
+        participantsCapacity <- map["maxAttendees"]
+    }
+
 }

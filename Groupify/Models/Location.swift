@@ -8,10 +8,11 @@
 
 import Foundation
 
+
 class Location{
     
     var center :[Int]?
-    var lat: Int?
-    var lon: Int?
+    var lat: String?
+    var lon: String?
     
 }

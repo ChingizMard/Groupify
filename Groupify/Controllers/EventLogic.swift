@@ -7,26 +7,31 @@
 //
 
 import Foundation
+import ObjectMapper
 
 
-class Event{
-    var _url = "http://localhost:4000/activity/find_activity"
-    
-    static func getEvents(_ completion: @escaping (_ success: Bool, _ result: [Contact]?, _ error: String?) -> Void) {
-        let url = APIService.buildAuthURL(servicePath)
+class EventLogic{
+    static func getEvents(completion: @escaping (_ success: Bool, _ result: Activities?, _ error: String?) -> Void) {
+        var _url = "http://localhost:4000/activity/find_activity"
+        var params: [String:Any] = [:]
         
-        APIService.get(url).responseJSON {
+        //Get Current Lat and Lon here!
+        params["center"] = [5,40]
+        params["radius"] = 20
+        params["unique"] = true
+        
+        APIService.postUniversal(_url, parameters: params).responseJSON {
             response in
             switch response.result {
             case .failure(_):
-                let errorString = JSON(data: response.data!)["error"].string
-                completion(false, nil, errorString)
+                completion(false, nil, "error")
                 return
             case .success:
                 // Parse the JSON response
-                let objects = Mapper<Contact>().mapArray(JSONObject: response.result.value!)
+                print(response.result.value)
+                let objects = Mapper<Activities>().map(JSONObject: response.result.value!)
                 
-                RealmUtils.store(objects)
+                print(objects)
                 
                 completion(true, objects, nil)
                 return
