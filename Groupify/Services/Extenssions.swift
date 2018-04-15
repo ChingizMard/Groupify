@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ObjectMapper
+import UIKit
+
 
 public extension UIView {
     
@@ -25,3 +28,5 @@ public extension UIView {
         self.cropToCircle()
     }
 }
+
+

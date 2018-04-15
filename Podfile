@@ -10,6 +10,7 @@ target 'Groupify' do
   pod 'SwiftKeychainWrapper'
   pod 'Eureka'
   pod 'ObjectMapper'
+  
 
   target 'GroupifyTests' do
     inherit! :search_paths
