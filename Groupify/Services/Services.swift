@@ -30,10 +30,10 @@ class APIService{
         return headers
     }
     
-    static func post(_ url: String, parameters: [String: Any]? = nil) -> Dictionary<String, Any>? {
+    static func post(completion: @escaping (_ success: Bool, _ rDictinary:Dictionary<String, Any>?) -> Void,_ url: String, parameters: [String: Any]? = nil){
         let headers = self.getRequestHeaders()
-        var rDictionary = Dictionary<String, Any>()
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
+        var rDictionary:Dictionary<String, Any>?
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200..<600).responseJSON { response in
             switch response.result {
             case .success:
                 print("Post Successful!")
@@ -41,16 +41,20 @@ class APIService{
                     print("JSON: \(_json)")
                     //let json = try? JSONSerialization.jsonObject(with: response.result, options: [])
                     if let dictionary = response.result.value as? [String:Any] {
-                        rDictionary = dictionary
+                        //rDictionary = dictionary
+                        print(dictionary["success"] as! Bool)
+                        if (dictionary["success"] as! Bool){
+                            completion(true, dictionary)
+                        }else{
+                            completion(false, nil)
+                        }
                     }
-                    
                 }
             case .failure(let error):
                 print(error)
+                completion(false, nil)
             }
-            
         }
-        return rDictionary
     }
     
     /* Might have to change the return value */
